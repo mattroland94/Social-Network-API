@@ -16,11 +16,6 @@ router
     .post(createUser);
 
 router
-    .route('/')
-    .get(getAllUsers)
-    .post(createUser);
-
-router
     .route('/:id')
     .get(getUserById)
     .put(updateUser)
