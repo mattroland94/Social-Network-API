@@ -15,7 +15,7 @@ const userCont = {
             });
     },
     getUserById({ params }, res) {
-        User.findOne({_id: parm.id})
+        User.findOne({_id: params.id})
         .populate({
             path: 'thoughts',
             select: '-__v'
