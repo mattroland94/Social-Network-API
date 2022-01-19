@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 app.use(require('./routes'));
 
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/nosql-mapi', {
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/Social_Network_API', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
